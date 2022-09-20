@@ -2,3 +2,5 @@
 ifndef::imagesdir[:imagesdir: images]
 
 == 2022-09-20
+
+image::git-workflow.png[]
