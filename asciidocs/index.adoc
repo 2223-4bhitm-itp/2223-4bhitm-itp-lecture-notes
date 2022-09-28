@@ -8,7 +8,6 @@ ifndef::imagesdir[:imagesdir: images]
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
 
-
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
 
@@ -20,12 +19,50 @@ ifdef::backend-html5[]
 
 * https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2011_II_300/COO_2026_100_2_701387.pdfsig[Lehrplan 2011]
 
+
+
 == 2022-09-20
 
+=== Wiederholung
+
+.Wiederholung GitHub Workflow
 image::git-workflow.png[]
 
 
 image::2022-09-20.tafelbild-projekte.jpg[]
+
+=== Projekte
+
+==== Teams
+
+|===
+|Projektname |Team
+
+|*Kapsch Prozessvisualisierung*
+|Spindler Thomas, Reiter Lydia, Hager Sebastian
+
+|*IOT Dashboard*
+|Horner Paul, Schatzberger Oliver, Eder Moritz, Moser Adrian
+
+|*GRULE Lehrplan*
+|Klose Peter, Al Sabagh Abdulrahman, Thaller David, Angerer Mona
+
+|*Westbahn*
+|Lummerstorfer Lukas, Weinhäupl Valentin, Just Elias, Goldmann Pascal
+|===
+
+[NOTE]
+Projektnamen noch nicht festgelegt
+
+
+==== Architektur der Projekte
+
+image::project-architecture.png[]
+
+
+
+
+
 
 
 
