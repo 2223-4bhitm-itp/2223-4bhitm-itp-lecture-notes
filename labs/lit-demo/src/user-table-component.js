@@ -4,7 +4,7 @@ class UserTableComponent extends HTMLElement {
     #users
     constructor() {
         super();
-
+        this.attachShadow({mode: "open"})
     }
     async connectedCallback() {
         console.log("connected")
@@ -14,8 +14,6 @@ class UserTableComponent extends HTMLElement {
     }
     #render() {
         const headerTemplate = document.getElementById("header")
-        //const header = headerTemplate.contentEditable.cloneNode(true)
-        //this.shadowRoot.appendChild(header)
         const table = /* html */`
         <table>
             <thead>
@@ -25,8 +23,8 @@ class UserTableComponent extends HTMLElement {
                 </tr>
             </thead>
             <tbody id = "body"></tbody>
-        </table>
-        `
+        </table>`
+
         this.shadowRoot.innerHTML = table
         const tbody = this.shadowRoot.getElementById("body")
         console.log("body",tbody)

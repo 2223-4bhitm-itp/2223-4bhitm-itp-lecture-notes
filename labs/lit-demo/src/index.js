@@ -1,3 +1,3 @@
 
-import "./user-table-component"
+import "./user-table-component.js"
 
