@@ -1,0 +1,47 @@
+npm init -y
+npm install --save-dev  live-server
+
+
+pagespeed insights -> pagespeed.web.dev
+
+
+.so nicht
+[source,html]
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELLO</title>
+    <script>./src/index.js</script>
+</head>
+<body>
+    hello, world
+</body>
+</html>
+----
+
+
+
+Event DOMContentTLoaded
+
+can i use modules
+
+shim ... um Browser Funktionalität zu erweitern
+
+
+http://jsonplaceholder.typicode.com/users
+
+callback hell
+
+.Module Bundler
+webpack.js.org
+
+.für typescript
+https://webpack.js.org/guides/typescript/
+
+npm install --save-dev webpack webpack-dev-server typescript ts-loader webpack-cli
+npx webpack
+
+html-webpack-pugin
+https://webpack.js.org/plugins/html-webpack-plugin
