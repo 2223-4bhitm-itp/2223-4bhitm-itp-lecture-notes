@@ -1,5 +1,23 @@
+import {html, render} from "lit-html"
+
 import userService from "./user-service"
 import {User} from "./model/user"
+
+const tableTemplate = html`
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<table class="w3-table w3-striped w3-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody id="body"></tbody>
+</table>        
+`
+const rowTemplate = (user: User) => html`
+    <td>${user.id}</td><td>${user.name}</td>
+`
 
 class UserTableComponent extends HTMLElement {
     private users: [User]
@@ -13,21 +31,17 @@ class UserTableComponent extends HTMLElement {
         this.#render()
     }
     #render() {
-        const headerTemplate = document.getElementById("header")
-        //const header = headerTemplate.content.cloneNode(true)
-        //this.shadowRoot.appendChild(header)
-        const tableTemplate = document.querySelector("template")
-        const table = tableTemplate.content.cloneNode(true)
-
-        this.shadowRoot.appendChild(table)
+        render(tableTemplate, this.shadowRoot)
         const tbody = this.shadowRoot.querySelector("tbody")
         console.log("body", tbody)
         this.users.forEach(user => {
             const row = tbody.insertRow()
-            row.innerHTML =  `
-                <td>${user.id}</td><td>${user.name}</td>`
+            row.onclick = () => {
+                alert(`user ${user.name} selected`)
+                this.dispatchEvent(new CustomEvent("user-selected", {detail: {user}}))
+            }
+            render(rowTemplate(user), row)
         })
-
     }
 }
 customElements.define("user-table", UserTableComponent)
