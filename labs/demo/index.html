@@ -9,8 +9,17 @@
     <script type="module" src="./src/index.js"></script>
 </head>
 <body>
-    <template id="header">
-        <h1>Hello</h1>
+    <template>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <table class="w3-table w3-striped w3-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>name</th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>        
     </template>
     <div id="content"></div>
     <user-table></user-table>
