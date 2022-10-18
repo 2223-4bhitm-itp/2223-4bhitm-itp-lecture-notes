@@ -39,4 +39,4 @@ class UserTableComponent extends HTMLElement {
 
     }
 }
-window.customElements.define("user-table", UserTableComponent)
+customElements.define("user-table", UserTableComponent)
