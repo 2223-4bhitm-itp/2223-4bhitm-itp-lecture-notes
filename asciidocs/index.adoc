@@ -60,6 +60,69 @@ Projektnamen noch nicht festgelegt
 image::project-architecture.png[]
 
 
+== 2023-01-10
+
+=== Regeln für die Projektarbeit
+
+==== Jeder Commit ist einer User Story / Task zugeordnet
+
+==== Arbeitszuordnung
+
+* Jedes Projektmitglied hat einen eigenständigen Aufgaben bereich zB einen Task.
+* Dieser Task wir in einem eigenem Branch erstellt / durchgeführt
+
+==== Sprint Reviews / Präsentationen
+
+* Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Einb essentielles Deployment ist erforderlich.
+
+* Folgende Möglichkeiten
+** oravm
+** leocloud in eigenem Namespace
+** minikube
+
+IMPORTANT: In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Backlog noch die gewählte Vorgangsweise (zB Branching)
+
+==== git-branching
+
+image::git-branching.png[]
+
+
+=== Projekthandbuch für Scrum
+
+* Team mit Rollen
+* Wie werden die Branches durchgeführt (siehe #git-branching)
+* Die URL für
+** github-Repo
+** Doku
+** Scrum-Board
+
+
+* https://www.youtube.com/watch?v=jXBo-RasY3g
+
+
+=== Dokumentation
+
+* Es muss eine (grobe) Systemarchitektur geben
+* Gewisse Entwurfsentscheidungen müssen dokumentiert werden
+* Eine RevealJS-Präsentation muss immer verfügbar sein
+** Problemstellung
+** Aufgabenstellung
+** derzeitiger Stand
+
+=== Testen
+
+* Die Akzeptanzkriterien sind als Unit-Tests implementieren (wenn möglich)
+* und ist zu präsentieren
+
+=== Film
+
+* im 5. Jg.
+
+=== Plakat
+
+
+
+
 
 
 
