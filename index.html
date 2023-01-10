@@ -445,7 +445,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas W. Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2022-12-04</span>
+<span id="revdate">2023-01-10</span>
 <br><span id="revremark">Informationstechnische Projekte</span>
 </div>
 <div id="toc" class="toc2">
@@ -462,6 +462,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_primer_leocloud">3.1. primer-leocloud</a></li>
 <li><a href="#_kubernetes_dashboard">3.2. Kubernetes Dashboard</a></li>
+</ul>
+</li>
+<li><a href="#_2023_01_10">4. 2023-01-10</a>
+<ul class="sectlevel2">
+<li><a href="#_regeln_für_die_projektarbeit">4.1. Regeln für die Projektarbeit</a></li>
+<li><a href="#_projekthandbuch_für_scrum">4.2. Projekthandbuch für Scrum</a></li>
+<li><a href="#_dokumentation">4.3. Dokumentation</a></li>
+<li><a href="#_testen">4.4. Testen</a></li>
+<li><a href="#_film">4.5. Film</a></li>
+<li><a href="#_plakat">4.6. Plakat</a></li>
 </ul>
 </li>
 </ul>
@@ -601,11 +611,170 @@ Den Namespace kann man <a href="https://cloud.htl-leonding.ac.at" target="_blank
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2023_01_10"><a class="anchor" href="#_2023_01_10"></a>4. 2023-01-10</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_regeln_für_die_projektarbeit"><a class="anchor" href="#_regeln_für_die_projektarbeit"></a>4.1. Regeln für die Projektarbeit</h3>
+<div class="sect3">
+<h4 id="_jeder_commit_ist_einer_user_story_task_zugeordnet"><a class="anchor" href="#_jeder_commit_ist_einer_user_story_task_zugeordnet"></a>4.1.1. Jeder Commit ist einer User Story / Task zugeordnet</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_arbeitszuordnung"><a class="anchor" href="#_arbeitszuordnung"></a>4.1.2. Arbeitszuordnung</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Jedes Projektmitglied hat einen eigenständigen Aufgaben bereich zB einen Task.</p>
+</li>
+<li>
+<p>Dieser Task wir in einem eigenem Branch erstellt / durchgeführt</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sprint_reviews_präsentationen"><a class="anchor" href="#_sprint_reviews_präsentationen"></a>4.1.3. Sprint Reviews / Präsentationen</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Einb essentielles Deployment ist erforderlich.</p>
+</li>
+<li>
+<p>Folgende Möglichkeiten</p>
+<div class="ulist">
+<ul>
+<li>
+<p>oravm</p>
+</li>
+<li>
+<p>leocloud in eigenem Namespace</p>
+</li>
+<li>
+<p>minikube</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Backlog noch die gewählte Vorgangsweise (zB Branching)
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_git_branching"><a class="anchor" href="#_git_branching"></a>4.1.4. git-branching</h4>
+<div class="imageblock">
+<div class="content">
+<img src="images/git-branching.png" alt="git branching">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_projekthandbuch_für_scrum"><a class="anchor" href="#_projekthandbuch_für_scrum"></a>4.2. Projekthandbuch für Scrum</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Team mit Rollen</p>
+</li>
+<li>
+<p>Wie werden die Branches durchgeführt (siehe #git-branching)</p>
+</li>
+<li>
+<p>Die URL für</p>
+<div class="ulist">
+<ul>
+<li>
+<p>github-Repo</p>
+</li>
+<li>
+<p>Doku</p>
+</li>
+<li>
+<p>Scrum-Board</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=jXBo-RasY3g" class="bare">https://www.youtube.com/watch?v=jXBo-RasY3g</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dokumentation"><a class="anchor" href="#_dokumentation"></a>4.3. Dokumentation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Es muss eine (grobe) Systemarchitektur geben</p>
+</li>
+<li>
+<p>Gewisse Entwurfsentscheidungen müssen dokumentiert werden</p>
+</li>
+<li>
+<p>Eine RevealJS-Präsentation muss immer verfügbar sein</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Problemstellung</p>
+</li>
+<li>
+<p>Aufgabenstellung</p>
+</li>
+<li>
+<p>derzeitiger Stand</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testen"><a class="anchor" href="#_testen"></a>4.4. Testen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Akzeptanzkriterien sind als Unit-Tests implementieren (wenn möglich)</p>
+</li>
+<li>
+<p>und ist zu präsentieren</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_film"><a class="anchor" href="#_film"></a>4.5. Film</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>im 5. Jg.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plakat"><a class="anchor" href="#_plakat"></a>4.6. Plakat</h3>
+
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-12-04 17:53:38 UTC
+Last updated 2023-01-10 13:06:00 UTC
 </div>
 </div>
 </body>
