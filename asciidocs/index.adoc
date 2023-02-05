@@ -88,12 +88,12 @@ IMPORTANT: Den Namespace kann man https://cloud.htl-leonding.ac.at[hier^] heraus
 
 ==== Arbeitszuordnung
 
-* Jedes Projektmitglied hat einen eigenständigen Aufgaben bereich zB einen Task.
+* Jedes Projektmitglied hat einen eigenständigen Aufgabenbereich zB einen Task.
 * Dieser Task wir in einem eigenem Branch erstellt / durchgeführt
 
 ==== Sprint Reviews / Präsentationen
 
-* Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Einb essentielles Deployment ist erforderlich.
+* Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Ein essentielles Deployment ist erforderlich.
 
 * Folgende Möglichkeiten
 ** oravm
@@ -117,7 +117,7 @@ image::git-branching.png[]
 ** Scrum-Board
 
 
-* https://www.youtube.com/watch?v=jXBo-RasY3g
+* https://www.youtube.com/watch?v=jXBo-RasY3g[YouTrack Project Management: Essentials for Getting Started^]
 
 
 === Dokumentation
@@ -139,6 +139,16 @@ image::git-branching.png[]
 * im 5. Jg.
 
 === Plakat
+
+== 2023-01-30
+
+=== Teststrategien
+
+* Grenzwertanalyse
+* Äquivalenzklassenanalyse
+
+.Beispiel
+image:teststrategien-bsp.jpeg[]
 
 
 
