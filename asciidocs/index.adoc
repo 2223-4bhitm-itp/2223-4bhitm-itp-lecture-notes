@@ -131,7 +131,7 @@ image::git-branching.png[]
 
 === Testen
 
-* Die Akzeptanzkriterien sind als Unit-Tests implementieren (wenn möglich)
+* Die Akzeptanzkriterien sind als Unit-Tests zu implementieren (wenn möglich)
 * und ist zu präsentieren
 
 === Film
