@@ -152,7 +152,10 @@ image:teststrategien-bsp.jpeg[]
 
 
 
+2023-03-07 -  Arbeiten mit Minikube
 
+* Folgendes Bsp wurde durchgearbeitet (zum Teil)
+** https://quarkus-seminar.github.io/demo-quarkus-webapp-postgres-k8s/
 
 
 
