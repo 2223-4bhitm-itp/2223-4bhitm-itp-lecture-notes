@@ -438,6 +438,120 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -445,7 +559,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas W. Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2023-03-08</span>
+<span id="revdate">2023-03-14</span>
 <br><span id="revremark">Informationstechnische Projekte</span>
 </div>
 <div id="toc" class="toc2">
@@ -477,6 +591,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_2023_01_30">5. 2023-01-30</a>
 <ul class="sectlevel2">
 <li><a href="#_teststrategien">5.1. Teststrategien</a></li>
+</ul>
+</li>
+<li><a href="#_2023_03_06">6. 2023-03-06</a>
+<ul class="sectlevel2">
+<li><a href="#_angular">6.1. Angular</a></li>
+</ul>
+</li>
+<li><a href="#_2023_03_13_bookmonkey">7. 2023-03-13 BookMonkey</a>
+<ul class="sectlevel2">
+<li><a href="#_erstellen_des_book_interfaces">7.1. Erstellen des Book-Interfaces</a></li>
+<li><a href="#_erstellen_der_book_list_component">7.2. Erstellen der book-list Component</a></li>
 </ul>
 </li>
 </ul>
@@ -814,11 +939,159 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2023_03_06"><a class="anchor" href="#_2023_03_06"></a>6. 2023-03-06</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_angular"><a class="anchor" href="#_angular"></a>6.1. Angular</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>nvm installieren (Node Version Manager)</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>brew intall nvm</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">in .zshrc anfügen</div>
+<div class="content">
+<pre>export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] &amp;&amp; . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Die letzte LTS-Version von node installieren</div>
+<div class="content">
+<pre>nvm install --lts</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">output</div>
+<div class="content">
+<pre>Installing latest LTS version.
+Downloading and installing node v18.15.0...
+Downloading https://nodejs.org/dist/v18.15.0/node-v18.15.0-darwin-arm64.tar.xz...
+######################################################################################################################################################### 100.0%
+Computing checksum with shasum -a 256
+Checksums matched!
+Now using node v18.15.0 (npm v9.5.0)
+Creating default alias: default -&gt; lts/* (-&gt; v18.15.0)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_03_13_bookmonkey"><a class="anchor" href="#_2023_03_13_bookmonkey"></a>7. 2023-03-13 BookMonkey</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">erstellen des Projekts</div>
+<div class="content">
+<pre>ng new book-monkey --routing --style=css --prefix=bm</pre>
+</div>
+</div>
+<details>
+<summary class="title">output</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>CREATE book-monkey/README.md (1064 bytes)
+CREATE book-monkey/.editorconfig (274 bytes)
+CREATE book-monkey/.gitignore (548 bytes)
+CREATE book-monkey/angular.json (2946 bytes)
+CREATE book-monkey/package.json (1042 bytes)
+CREATE book-monkey/tsconfig.json (863 bytes)
+CREATE book-monkey/.browserslistrc (600 bytes)
+CREATE book-monkey/karma.conf.js (1428 bytes)
+CREATE book-monkey/tsconfig.app.json (287 bytes)
+CREATE book-monkey/tsconfig.spec.json (333 bytes)
+CREATE book-monkey/.vscode/extensions.json (130 bytes)
+CREATE book-monkey/.vscode/launch.json (474 bytes)
+CREATE book-monkey/.vscode/tasks.json (938 bytes)
+CREATE book-monkey/src/favicon.ico (948 bytes)
+CREATE book-monkey/src/index.html (294 bytes)
+CREATE book-monkey/src/main.ts (372 bytes)
+CREATE book-monkey/src/polyfills.ts (2338 bytes)
+CREATE book-monkey/src/styles.css (80 bytes)
+CREATE book-monkey/src/test.ts (749 bytes)
+CREATE book-monkey/src/assets/.gitkeep (0 bytes)
+CREATE book-monkey/src/environments/environment.prod.ts (51 bytes)
+CREATE book-monkey/src/environments/environment.ts (658 bytes)
+CREATE book-monkey/src/app/app-routing.module.ts (245 bytes)
+CREATE book-monkey/src/app/app.module.ts (393 bytes)
+CREATE book-monkey/src/app/app.component.css (0 bytes)
+CREATE book-monkey/src/app/app.component.html (23115 bytes)
+CREATE book-monkey/src/app/app.component.spec.ts (1088 bytes)
+CREATE book-monkey/src/app/app.component.ts (214 bytes)
+✔ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.</pre>
+</div>
+</div>
+</div>
+</details>
+<div class="listingblock">
+<div class="title">Mit webstorm aufrufen</div>
+<div class="content">
+<pre>cd book-monkey
+webstorm .</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">App starten</div>
+<div class="content">
+<pre>ng serve</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mit Browser <a href="http://localhost:4200" class="bare">http://localhost:4200</a> starten</p>
+</div>
+<div class="sect2">
+<h3 id="_erstellen_des_book_interfaces"><a class="anchor" href="#_erstellen_des_book_interfaces"></a>7.1. Erstellen des Book-Interfaces</h3>
+<div class="listingblock">
+<div class="content">
+<pre>ng g interface shared/book</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="typescript"><span class="k">export</span> <span class="kr">interface</span> <span class="nx">Book</span> <span class="p">{</span>
+
+  <span class="nl">isbn</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+  <span class="nl">title</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+  <span class="nl">authors</span><span class="p">:</span> <span class="kr">string</span><span class="p">[]</span>
+  <span class="nx">published</span><span class="p">?:</span> <span class="kr">string</span><span class="p">;</span>
+  <span class="nl">subtitle</span><span class="p">?:</span> <span class="kr">string</span>
+  <span class="nx">thumbnailUrl</span><span class="p">?</span> <span class="p">:</span> <span class="kr">string</span>
+  <span class="nx">description</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+
+<span class="p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_erstellen_der_book_list_component"><a class="anchor" href="#_erstellen_der_book_list_component"></a>7.2. Erstellen der book-list Component</h3>
+<div class="listingblock">
+<div class="content">
+<pre>ng g c book-list</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_direktive_ngfor"><a class="anchor" href="#_direktive_ngfor"></a>7.2.1. Direktive *ngFor</h4>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2023-03-08 08:57:46 UTC
+Last updated 2023-03-14 21:36:51 UTC
 </div>
 </div>
 </body>
