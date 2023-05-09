@@ -292,9 +292,28 @@ ng g c book-list
 ** und auch https://github.com/angular/angular/blob/16.0.x/CONTRIBUTING.md#-commit-message-format[Angular conventions^]
 
 
+=== Github Packages
 
+* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHib Packages^]
 
+* GitHub Packages offers different package registries for commonly used package managers, such as
+** npm,
+** RubyGems,
+** Apache Maven,
+** Gradle, Docker, and
+** NuGet.
 
+* GitHub's Container registry is optimized for containers and supports Docker and OCI images.
+
+=== GitHub Releases
+
+* https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases#about-releases[GitHub Releases^]
+
+* You can create a release to package software, along with release notes and links to binary files, for other people to use.
+
+* Im Gegensatz zu den Packages können bei den Releases beliebige Artefakte publiziertund in weiterer Folge getagged werden.
+
+https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 
 
