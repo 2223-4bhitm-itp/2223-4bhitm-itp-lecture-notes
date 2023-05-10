@@ -311,7 +311,7 @@ ng g c book-list
 
 * You can create a release to package software, along with release notes and links to binary files, for other people to use.
 
-* Im Gegensatz zu den Packages können bei den Releases beliebige Artefakte publiziertund in weiterer Folge getagged werden.
+* Im Gegensatz zu den Packages können bei den Releases beliebige Artefakte publiziert und in weiterer Folge getagged werden.
 
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
