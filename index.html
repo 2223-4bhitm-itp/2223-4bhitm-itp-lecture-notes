@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <meta name="author" content="Thomas W. Stütz">
 <link rel="icon" type="image/png" href="themes/favicon.png">
 <title>Lecture Notes / 22-23 / 4bhitm / itp</title>
@@ -210,13 +210,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -395,7 +392,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -559,7 +556,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas W. Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2023-05-10</span>
+<span id="revdate">2023-05-23</span>
 <br><span id="revremark">Informationstechnische Projekte</span>
 </div>
 <div id="toc" class="toc2">
@@ -578,37 +575,38 @@ pre.rouge .gs {
 <li><a href="#_kubernetes_dashboard">3.2. Kubernetes Dashboard</a></li>
 </ul>
 </li>
-<li><a href="#_2023_01_10">4. 2023-01-10</a>
+<li><a href="#_23_03">4. 23.03</a></li>
+<li><a href="#_2023_01_10">5. 2023-01-10</a>
 <ul class="sectlevel2">
-<li><a href="#_regeln_für_die_projektarbeit">4.1. Regeln für die Projektarbeit</a></li>
-<li><a href="#_projekthandbuch_für_scrum">4.2. Projekthandbuch für Scrum</a></li>
-<li><a href="#_dokumentation">4.3. Dokumentation</a></li>
-<li><a href="#_testen">4.4. Testen</a></li>
-<li><a href="#_film">4.5. Film</a></li>
-<li><a href="#_plakat">4.6. Plakat</a></li>
+<li><a href="#_regeln_für_die_projektarbeit">5.1. Regeln für die Projektarbeit</a></li>
+<li><a href="#_projekthandbuch_für_scrum">5.2. Projekthandbuch für Scrum</a></li>
+<li><a href="#_dokumentation">5.3. Dokumentation</a></li>
+<li><a href="#_testen">5.4. Testen</a></li>
+<li><a href="#_film">5.5. Film</a></li>
+<li><a href="#_plakat">5.6. Plakat</a></li>
 </ul>
 </li>
-<li><a href="#_2023_01_30">5. 2023-01-30</a>
+<li><a href="#_2023_01_30">6. 2023-01-30</a>
 <ul class="sectlevel2">
-<li><a href="#_teststrategien">5.1. Teststrategien</a></li>
+<li><a href="#_teststrategien">6.1. Teststrategien</a></li>
 </ul>
 </li>
-<li><a href="#_2023_03_06">6. 2023-03-06</a>
+<li><a href="#_2023_03_06">7. 2023-03-06</a>
 <ul class="sectlevel2">
-<li><a href="#_angular">6.1. Angular</a></li>
+<li><a href="#_angular">7.1. Angular</a></li>
 </ul>
 </li>
-<li><a href="#_2023_03_13_bookmonkey">7. 2023-03-13 BookMonkey</a>
+<li><a href="#_2023_03_13_bookmonkey">8. 2023-03-13 BookMonkey</a>
 <ul class="sectlevel2">
-<li><a href="#_erstellen_des_book_interfaces">7.1. Erstellen des Book-Interfaces</a></li>
-<li><a href="#_erstellen_der_book_list_component">7.2. Erstellen der book-list Component</a></li>
+<li><a href="#_erstellen_des_book_interfaces">8.1. Erstellen des Book-Interfaces</a></li>
+<li><a href="#_erstellen_der_book_list_component">8.2. Erstellen der book-list Component</a></li>
 </ul>
 </li>
-<li><a href="#_2023_05_09">8. 2023-05-09</a>
+<li><a href="#_2023_05_09">9. 2023-05-09</a>
 <ul class="sectlevel2">
-<li><a href="#_commits">8.1. Commits</a></li>
-<li><a href="#_github_packages">8.2. Github Packages</a></li>
-<li><a href="#_github_releases">8.3. GitHub Releases</a></li>
+<li><a href="#_commits">9.1. Commits</a></li>
+<li><a href="#_github_packages">9.2. Github Packages</a></li>
+<li><a href="#_github_releases">9.3. GitHub Releases</a></li>
 </ul>
 </li>
 </ul>
@@ -749,16 +747,28 @@ Den Namespace kann man <a href="https://cloud.htl-leonding.ac.at" target="_blank
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_01_10"><a class="anchor" href="#_2023_01_10"></a>4. 2023-01-10</h2>
+<h2 id="_23_03"><a class="anchor" href="#_23_03"></a>4. 23.03</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Moritz Eder</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_01_10"><a class="anchor" href="#_2023_01_10"></a>5. 2023-01-10</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_regeln_für_die_projektarbeit"><a class="anchor" href="#_regeln_für_die_projektarbeit"></a>4.1. Regeln für die Projektarbeit</h3>
+<h3 id="_regeln_für_die_projektarbeit"><a class="anchor" href="#_regeln_für_die_projektarbeit"></a>5.1. Regeln für die Projektarbeit</h3>
 <div class="sect3">
-<h4 id="_jeder_commit_ist_einer_user_story_task_zugeordnet"><a class="anchor" href="#_jeder_commit_ist_einer_user_story_task_zugeordnet"></a>4.1.1. Jeder Commit ist einer User Story / Task zugeordnet</h4>
+<h4 id="_jeder_commit_ist_einer_user_story_task_zugeordnet"><a class="anchor" href="#_jeder_commit_ist_einer_user_story_task_zugeordnet"></a>5.1.1. Jeder Commit ist einer User Story / Task zugeordnet</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_arbeitszuordnung"><a class="anchor" href="#_arbeitszuordnung"></a>4.1.2. Arbeitszuordnung</h4>
+<h4 id="_arbeitszuordnung"><a class="anchor" href="#_arbeitszuordnung"></a>5.1.2. Arbeitszuordnung</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -771,7 +781,7 @@ Den Namespace kann man <a href="https://cloud.htl-leonding.ac.at" target="_blank
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sprint_reviews_präsentationen"><a class="anchor" href="#_sprint_reviews_präsentationen"></a>4.1.3. Sprint Reviews / Präsentationen</h4>
+<h4 id="_sprint_reviews_präsentationen"><a class="anchor" href="#_sprint_reviews_präsentationen"></a>5.1.3. Sprint Reviews / Präsentationen</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -809,7 +819,7 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect3">
-<h4 id="_git_branching"><a class="anchor" href="#_git_branching"></a>4.1.4. git-branching</h4>
+<h4 id="_git_branching"><a class="anchor" href="#_git_branching"></a>5.1.4. git-branching</h4>
 <div class="imageblock">
 <div class="content">
 <img src="images/git-branching.png" alt="git branching">
@@ -818,7 +828,7 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect2">
-<h3 id="_projekthandbuch_für_scrum"><a class="anchor" href="#_projekthandbuch_für_scrum"></a>4.2. Projekthandbuch für Scrum</h3>
+<h3 id="_projekthandbuch_für_scrum"><a class="anchor" href="#_projekthandbuch_für_scrum"></a>5.2. Projekthandbuch für Scrum</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -850,7 +860,7 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect2">
-<h3 id="_dokumentation"><a class="anchor" href="#_dokumentation"></a>4.3. Dokumentation</h3>
+<h3 id="_dokumentation"><a class="anchor" href="#_dokumentation"></a>5.3. Dokumentation</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -879,7 +889,7 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect2">
-<h3 id="_testen"><a class="anchor" href="#_testen"></a>4.4. Testen</h3>
+<h3 id="_testen"><a class="anchor" href="#_testen"></a>5.4. Testen</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -892,7 +902,7 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect2">
-<h3 id="_film"><a class="anchor" href="#_film"></a>4.5. Film</h3>
+<h3 id="_film"><a class="anchor" href="#_film"></a>5.5. Film</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -902,16 +912,16 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect2">
-<h3 id="_plakat"><a class="anchor" href="#_plakat"></a>4.6. Plakat</h3>
+<h3 id="_plakat"><a class="anchor" href="#_plakat"></a>5.6. Plakat</h3>
 
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_01_30"><a class="anchor" href="#_2023_01_30"></a>5. 2023-01-30</h2>
+<h2 id="_2023_01_30"><a class="anchor" href="#_2023_01_30"></a>6. 2023-01-30</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_teststrategien"><a class="anchor" href="#_teststrategien"></a>5.1. Teststrategien</h3>
+<h3 id="_teststrategien"><a class="anchor" href="#_teststrategien"></a>6.1. Teststrategien</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -947,10 +957,10 @@ In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Back
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_03_06"><a class="anchor" href="#_2023_03_06"></a>6. 2023-03-06</h2>
+<h2 id="_2023_03_06"><a class="anchor" href="#_2023_03_06"></a>7. 2023-03-06</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_angular"><a class="anchor" href="#_angular"></a>6.1. Angular</h3>
+<h3 id="_angular"><a class="anchor" href="#_angular"></a>7.1. Angular</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -994,7 +1004,7 @@ Creating default alias: default -&gt; lts/* (-&gt; v18.15.0)</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_03_13_bookmonkey"><a class="anchor" href="#_2023_03_13_bookmonkey"></a>7. 2023-03-13 BookMonkey</h2>
+<h2 id="_2023_03_13_bookmonkey"><a class="anchor" href="#_2023_03_13_bookmonkey"></a>8. 2023-03-13 BookMonkey</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="title">erstellen des Projekts</div>
@@ -1058,7 +1068,7 @@ webstorm .</pre>
 <p>Mit Browser <a href="http://localhost:4200" class="bare">http://localhost:4200</a> starten</p>
 </div>
 <div class="sect2">
-<h3 id="_erstellen_des_book_interfaces"><a class="anchor" href="#_erstellen_des_book_interfaces"></a>7.1. Erstellen des Book-Interfaces</h3>
+<h3 id="_erstellen_des_book_interfaces"><a class="anchor" href="#_erstellen_des_book_interfaces"></a>8.1. Erstellen des Book-Interfaces</h3>
 <div class="listingblock">
 <div class="content">
 <pre>ng g interface shared/book</pre>
@@ -1081,24 +1091,24 @@ webstorm .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_erstellen_der_book_list_component"><a class="anchor" href="#_erstellen_der_book_list_component"></a>7.2. Erstellen der book-list Component</h3>
+<h3 id="_erstellen_der_book_list_component"><a class="anchor" href="#_erstellen_der_book_list_component"></a>8.2. Erstellen der book-list Component</h3>
 <div class="listingblock">
 <div class="content">
 <pre>ng g c book-list</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_direktive_ngfor"><a class="anchor" href="#_direktive_ngfor"></a>7.2.1. Direktive *ngFor</h4>
+<h4 id="_direktive_ngfor"><a class="anchor" href="#_direktive_ngfor"></a>8.2.1. Direktive *ngFor</h4>
 
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_05_09"><a class="anchor" href="#_2023_05_09"></a>8. 2023-05-09</h2>
+<h2 id="_2023_05_09"><a class="anchor" href="#_2023_05_09"></a>9. 2023-05-09</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_commits"><a class="anchor" href="#_commits"></a>8.1. Commits</h3>
+<h3 id="_commits"><a class="anchor" href="#_commits"></a>9.1. Commits</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1121,7 +1131,7 @@ webstorm .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_github_packages"><a class="anchor" href="#_github_packages"></a>8.2. Github Packages</h3>
+<h3 id="_github_packages"><a class="anchor" href="#_github_packages"></a>9.2. Github Packages</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1156,7 +1166,7 @@ webstorm .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_github_releases"><a class="anchor" href="#_github_releases"></a>8.3. GitHub Releases</h3>
+<h3 id="_github_releases"><a class="anchor" href="#_github_releases"></a>9.3. GitHub Releases</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1180,7 +1190,7 @@ webstorm .</pre>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2023-05-10 09:06:35 UTC
+Last updated 2023-05-23 10:57:32 UTC
 </div>
 </div>
 </body>
