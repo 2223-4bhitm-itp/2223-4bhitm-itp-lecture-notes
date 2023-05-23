@@ -316,7 +316,9 @@ ng g c book-list
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 
+== 2023-05-23
 
+* Mona Angerer
 
 
 
