@@ -325,6 +325,7 @@ https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 * Thomas Spindler
 
+* David Thaller
 
 * Peter Klose
 
