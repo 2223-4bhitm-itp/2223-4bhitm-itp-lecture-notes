@@ -83,6 +83,255 @@ IMPORTANT: Den Namespace kann man https://cloud.htl-leonding.ac.at[hier^] heraus
 
 
 
+== 2023-01-10
+
+=== Regeln für die Projektarbeit
+
+==== Jeder Commit ist einer User Story / Task zugeordnet
+
+==== Arbeitszuordnung
+
+* Jedes Projektmitglied hat einen eigenständigen Aufgabenbereich zB einen Task.
+* Dieser Task wir in einem eigenem Branch erstellt / durchgeführt
+
+==== Sprint Reviews / Präsentationen
+
+* Es darf nicht auf dem eigenen Rechner (kein grüner Pfeil in der IDE) präsentiert werden. Ein essentielles Deployment ist erforderlich.
+
+* Folgende Möglichkeiten
+** oravm
+** leocloud in eigenem Namespace
+** minikube
+
+IMPORTANT: In einem laufenden Sprint wird nichts verändert. Weder Aufgaben des Sprint Backlog noch die gewählte Vorgangsweise (zB Branching)
+
+==== git-branching
+
+image::git-branching.png[]
+
+
+=== Projekthandbuch für Scrum
+
+* Team mit Rollen
+* Wie werden die Branches durchgeführt (siehe #git-branching)
+* Die URL für
+** github-Repo
+** Doku
+** Scrum-Board
+
+
+* https://www.youtube.com/watch?v=jXBo-RasY3g[YouTrack Project Management: Essentials for Getting Started^]
+
+
+=== Dokumentation
+
+* Es muss eine (grobe) Systemarchitektur geben
+* Gewisse Entwurfsentscheidungen müssen dokumentiert werden
+* Eine RevealJS-Präsentation muss immer verfügbar sein
+** Problemstellung
+** Aufgabenstellung
+** derzeitiger Stand
+
+=== Testen
+
+* Die Akzeptanzkriterien sind als Unit-Tests zu implementieren (wenn möglich)
+* und ist zu präsentieren
+
+=== Film
+
+* im 5. Jg.
+
+=== Plakat
+
+== 2023-01-30
+
+=== Teststrategien
+
+* Grenzwertanalyse
+* Äquivalenzklassenanalyse
+
+.Beispiel
+image:teststrategien-bsp.jpeg[]
+
+
+
+2023-03-07 -  Arbeiten mit Minikube
+
+* Folgendes Bsp wurde durchgearbeitet (zum Teil)
+** https://quarkus-seminar.github.io/demo-quarkus-webapp-postgres-k8s/
+
+
+== 2023-03-06
+
+=== Angular
+
+* nvm installieren (Node Version Manager)
+
+----
+brew intall nvm
+----
+
+
+.in .zshrc anfügen
+----
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+----
+
+.Die letzte LTS-Version von node installieren
+----
+nvm install --lts
+----
+
+.output
+----
+Installing latest LTS version.
+Downloading and installing node v18.15.0...
+Downloading https://nodejs.org/dist/v18.15.0/node-v18.15.0-darwin-arm64.tar.xz...
+######################################################################################################################################################### 100.0%
+Computing checksum with shasum -a 256
+Checksums matched!
+Now using node v18.15.0 (npm v9.5.0)
+Creating default alias: default -> lts/* (-> v18.15.0)
+----
+
+== 2023-03-13 BookMonkey
+
+.erstellen des Projekts
+----
+ng new book-monkey --routing --style=css --prefix=bm
+----
+
+.output
+[%collapsible]
+====
+----
+CREATE book-monkey/README.md (1064 bytes)
+CREATE book-monkey/.editorconfig (274 bytes)
+CREATE book-monkey/.gitignore (548 bytes)
+CREATE book-monkey/angular.json (2946 bytes)
+CREATE book-monkey/package.json (1042 bytes)
+CREATE book-monkey/tsconfig.json (863 bytes)
+CREATE book-monkey/.browserslistrc (600 bytes)
+CREATE book-monkey/karma.conf.js (1428 bytes)
+CREATE book-monkey/tsconfig.app.json (287 bytes)
+CREATE book-monkey/tsconfig.spec.json (333 bytes)
+CREATE book-monkey/.vscode/extensions.json (130 bytes)
+CREATE book-monkey/.vscode/launch.json (474 bytes)
+CREATE book-monkey/.vscode/tasks.json (938 bytes)
+CREATE book-monkey/src/favicon.ico (948 bytes)
+CREATE book-monkey/src/index.html (294 bytes)
+CREATE book-monkey/src/main.ts (372 bytes)
+CREATE book-monkey/src/polyfills.ts (2338 bytes)
+CREATE book-monkey/src/styles.css (80 bytes)
+CREATE book-monkey/src/test.ts (749 bytes)
+CREATE book-monkey/src/assets/.gitkeep (0 bytes)
+CREATE book-monkey/src/environments/environment.prod.ts (51 bytes)
+CREATE book-monkey/src/environments/environment.ts (658 bytes)
+CREATE book-monkey/src/app/app-routing.module.ts (245 bytes)
+CREATE book-monkey/src/app/app.module.ts (393 bytes)
+CREATE book-monkey/src/app/app.component.css (0 bytes)
+CREATE book-monkey/src/app/app.component.html (23115 bytes)
+CREATE book-monkey/src/app/app.component.spec.ts (1088 bytes)
+CREATE book-monkey/src/app/app.component.ts (214 bytes)
+✔ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.
+----
+====
+
+.Mit webstorm aufrufen
+----
+cd book-monkey
+webstorm .
+----
+
+
+.App starten
+----
+ng serve
+----
+
+Mit Browser http://localhost:4200 starten
+
+=== Erstellen des Book-Interfaces
+
+----
+ng g interface shared/book
+----
+
+[source,typescript]
+----
+export interface Book {
+
+  isbn: string;
+  title: string;
+  authors: string[]
+  published?: string;
+  subtitle?: string
+  thumbnailUrl? : string
+  description: string;
+
+}
+----
+
+=== Erstellen der book-list Component
+
+----
+ng g c book-list
+----
+
+==== Direktive *ngFor
+
+
+== 2023-05-09
+
+=== Commits
+
+* Es wird vereinbart für die Commit-Messages folgende Formate zu verwenden:
+
+** https://www.conventionalcommits.org[^]
+** im Besonderen: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#commitlintconfig-conventional[@commitlint/config-conventional^]
+** und auch https://github.com/angular/angular/blob/16.0.x/CONTRIBUTING.md#-commit-message-format[Angular conventions^]
+
+
+=== Github Packages
+
+* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHib Packages^]
+
+* GitHub Packages offers different package registries for commonly used package managers, such as
+** npm,
+** RubyGems,
+** Apache Maven,
+** Gradle, Docker, and
+** NuGet.
+
+* GitHub's Container registry is optimized for containers and supports Docker and OCI images.
+
+=== GitHub Releases
+
+* https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases#about-releases[GitHub Releases^]
+
+* You can create a release to package software, along with release notes and links to binary files, for other people to use.
+
+* Im Gegensatz zu den Packages können bei den Releases beliebige Artefakte publiziert und in weiterer Folge getagged werden.
+
+https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

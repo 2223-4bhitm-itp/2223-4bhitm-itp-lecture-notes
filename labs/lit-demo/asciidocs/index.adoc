@@ -2,8 +2,7 @@ npm init -y
 npm install --save-dev  live-server
 
 
-pagespeed insights -> pagespeed.web.dev
-
+pagespeed insights ->  https://pagespeed.web.dev/
 
 .so nicht
 [source,html]
@@ -45,3 +44,5 @@ npx webpack
 
 html-webpack-pugin
 https://webpack.js.org/plugins/html-webpack-plugin
+
+
