@@ -316,7 +316,9 @@ ng g c book-list
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 
+== 23.05.2023
 
+* Pascal Goldmann
 
 
 
