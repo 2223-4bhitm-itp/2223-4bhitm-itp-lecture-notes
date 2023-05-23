@@ -76,6 +76,9 @@ IMPORTANT: Den Namespace kann man https://cloud.htl-leonding.ac.at[hier^] heraus
 2. Der Anweisungungen in der LeoCloud unter *Mein Dashboard* folgen
 
 
+== 23.03
+
+* Moritz Eder
 
 
 
@@ -315,20 +318,11 @@ ng g c book-list
 
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
+== 2023-05-23
 
-
-
-
-
-
-
-
-
-
-
-* 23.5 Elias Just
-
-
+* Thomas Spindler
+* Elias Just
+* Lydia Reiter
 
 
 
