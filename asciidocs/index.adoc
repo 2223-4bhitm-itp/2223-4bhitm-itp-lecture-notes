@@ -318,9 +318,13 @@ ng g c book-list
 
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
+
+== 23.5.2023 Weihäupl
+
 == 2023-05-23
 
 * Thomas Spindler
+
 
 * Peter Klose
 
