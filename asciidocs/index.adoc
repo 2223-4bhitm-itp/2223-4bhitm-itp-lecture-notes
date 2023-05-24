@@ -76,10 +76,6 @@ IMPORTANT: Den Namespace kann man https://cloud.htl-leonding.ac.at[hier^] heraus
 2. Der Anweisungungen in der LeoCloud unter *Mein Dashboard* folgen
 
 
-== 23.03
-
-* Moritz Eder
-
 
 
 
@@ -295,9 +291,9 @@ ng g c book-list
 ** und auch https://github.com/angular/angular/blob/16.0.x/CONTRIBUTING.md#-commit-message-format[Angular conventions^]
 
 
-=== Github Packages
+=== GitHub Packages
 
-* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHib Packages^]
+* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHub Packages^]
 
 * GitHub Packages offers different package registries for commonly used package managers, such as
 ** npm,
@@ -319,20 +315,8 @@ ng g c book-list
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 
-== 23.5.2023 Weihäupl
 
 == 2023-05-23
-
-* Thomas Spindler
-
-
-* Peter Klose
-
-* Elias Just
-
-* Lydia Reiter
-
-
 
 
 
