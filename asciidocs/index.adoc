@@ -318,4 +318,8 @@ https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 == 2023-05-23
 
+== 2023-06-13
+[Hager Sebastian]
 
+image:agilevsclassic.PNG[]
+image:scrumboard.PNG[]
