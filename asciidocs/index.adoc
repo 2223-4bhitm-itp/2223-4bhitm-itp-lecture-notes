@@ -333,6 +333,10 @@ System Architektur:
 image::iot-system-architecture.png[]
 
 
+[Hager Sebastian]
+
+image:agilevsclassic.PNG[]
+image:scrumboard.PNG[]
 
 == 2023-06-20
 
