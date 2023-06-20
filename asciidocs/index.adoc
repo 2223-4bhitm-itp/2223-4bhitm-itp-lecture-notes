@@ -329,4 +329,22 @@ IoT:
 
 System Architektur:
 
+
 image::iot-system-architecture.png[]
+
+
+
+== 2023-06-20
+
+=== Nutzwertanalyse
+
+image::nutzwertanalyse1.png[]
+
+image::nutzwertanalyse2.png[]
+
+
+=== Latex in IntelliJ
+
+image::latex-in-intellij.png[]
+
+
