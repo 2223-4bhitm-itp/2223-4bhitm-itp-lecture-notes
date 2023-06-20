@@ -318,6 +318,7 @@ https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
 
 
+
 == 2023-06-13
 
 Präsentation Gruppe Franklyn und IoT
@@ -337,6 +338,23 @@ image::iot-system-architecture.png[]
 
 image:agilevsclassic.PNG[]
 image:scrumboard.PNG[]
+
+
+=== Vorgehensmodelle
+[Klose Peter]
+
+image::vorgehensmodelle-agil-klassisch.png[]
+
+=== Testverbesserung
+
+.Musterlösung ERD
+image::erd-musterloesung-flugzeug.svg[]
+
+*Entität* ... Objekte aus der Realität die ich zur Problemlösung brauche
+
+==== Bsp.: Vererbung oder Entität:
+
+image::vererbung-entitaet.png[]
 
 == 2023-06-20
 
