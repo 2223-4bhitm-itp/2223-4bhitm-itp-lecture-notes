@@ -47,7 +47,7 @@ image::2022-09-20.tafelbild-projekte.jpg[]
 |*HTL Leonding Leonie*
 |Klose Peter, Al Sabagh Abdulrahman, Thaller David, Angerer Mona
 
-|*Yeac*
+|*Yaec*
 |Lummerstorfer Lukas, Weinhäupl Valentin, Just Elias, Goldmann Pascal
 |===
 
@@ -314,12 +314,41 @@ ng g c book-list
 
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
-
-
 == 2023-05-23
 
+
+
 == 2023-06-13
+
+Präsentation Gruppe Franklyn und IoT
+
+IoT:
+
+* Live Daten auf HTML Website sichtbar mit Live Aktualisierung
+* Data Logger loggt die Daten in der Command Line
+
+System Architektur:
+
+
+image::iot-system-architecture.png[]
+
+
 [Hager Sebastian]
 
 image:agilevsclassic.PNG[]
 image:scrumboard.PNG[]
+
+== 2023-06-20
+
+=== Nutzwertanalyse
+
+image::nutzwertanalyse1.png[]
+
+image::nutzwertanalyse2.png[]
+
+
+=== Latex in IntelliJ
+
+image::latex-in-intellij.png[]
+
+
