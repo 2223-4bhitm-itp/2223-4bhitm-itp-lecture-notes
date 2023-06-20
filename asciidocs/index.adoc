@@ -47,7 +47,7 @@ image::2022-09-20.tafelbild-projekte.jpg[]
 |*HTL Leonding Leonie*
 |Klose Peter, Al Sabagh Abdulrahman, Thaller David, Angerer Mona
 
-|*Yeac*
+|*Yaec*
 |Lummerstorfer Lukas, Weinhäupl Valentin, Just Elias, Goldmann Pascal
 |===
 
@@ -75,10 +75,6 @@ IMPORTANT: Den Namespace kann man https://cloud.htl-leonding.ac.at[hier^] heraus
 1. https://kubernetes.io/de/docs/tasks/tools/install-kubectl[Anleitung kubectl installieren]
 2. Der Anweisungungen in der LeoCloud unter *Mein Dashboard* folgen
 
-
-== 23.03
-
-* Moritz Eder
 
 
 
@@ -295,9 +291,9 @@ ng g c book-list
 ** und auch https://github.com/angular/angular/blob/16.0.x/CONTRIBUTING.md#-commit-message-format[Angular conventions^]
 
 
-=== Github Packages
+=== GitHub Packages
 
-* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHib Packages^]
+* https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages#about-github-packages[GitHub Packages^]
 
 * GitHub Packages offers different package registries for commonly used package managers, such as
 ** npm,
@@ -318,24 +314,57 @@ ng g c book-list
 
 https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 
-
-== 23.5.2023 Weihäupl
-
 == 2023-05-23
 
-* Thomas Spindler
 
-* David Thaller
+== 2023-06-13
 
-* Peter Klose
+Präsentation Gruppe Franklyn und IoT
 
-* Elias Just
+IoT:
 
-* Lydia Reiter
+* Live Daten auf HTML Website sichtbar mit Live Aktualisierung
+* Data Logger loggt die Daten in der Command Line
+
+System Architektur:
 
 
+image::iot-system-architecture.png[]
 
 
+[Hager Sebastian]
 
+image:agilevsclassic.PNG[]
+image:scrumboard.PNG[]
+
+
+=== Vorgehensmodelle
+[Klose Peter]
+
+image::vorgehensmodelle-agil-klassisch.png[]
+
+=== Testverbesserung
+
+.Musterlösung ERD
+image::erd-musterloesung-flugzeug.svg[]
+
+*Entität* ... Objekte aus der Realität die ich zur Problemlösung brauche
+
+==== Bsp.: Vererbung oder Entität:
+
+image::vererbung-entitaet.png[]
+
+== 2023-06-20
+
+=== Nutzwertanalyse
+
+image::nutzwertanalyse1.png[]
+
+image::nutzwertanalyse2.png[]
+
+
+=== Latex in IntelliJ
+
+image::latex-in-intellij.png[]
 
 
