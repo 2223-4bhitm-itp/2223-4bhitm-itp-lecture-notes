@@ -319,3 +319,16 @@ https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo/[^]
 == 2023-05-23
 
 
+== 2023-06-20
+
+=== Nutzwertanalyse
+
+image::nutzwertanalyse1.png[]
+
+image::nutzwertanalyse2.png[]
+
+
+=== Latex in IntelliJ
+
+image::latex-in-intellij.png[]
+
