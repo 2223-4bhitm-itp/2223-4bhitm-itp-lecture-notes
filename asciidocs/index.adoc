@@ -332,6 +332,7 @@ System Architektur:
 image::iot-system-architecture.png[]
 
 
+
 [Hager Sebastian]
 
 image:agilevsclassic.PNG[]
@@ -349,6 +350,7 @@ image::vorgehensmodelle-agil-klassisch.png[]
 image::erd-musterloesung-flugzeug.svg[]
 
 *Entität* ... Objekte aus der Realität die ich zur Problemlösung brauche
+
 
 ==== Bsp.: Vererbung oder Entität:
 
